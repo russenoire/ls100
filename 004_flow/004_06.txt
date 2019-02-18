@@ -1,0 +1,12 @@
+def equal_to_four(x)
+  if x == 4
+    puts "yup"
+  else
+    puts "nope"
+end
+
+equal_to_four(5)
+
+# this code is missing an end statement, so it throws the 
+'unexpected end-of-input' error. add the end statement to the 
+end of the if-else block.
