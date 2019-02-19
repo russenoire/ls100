@@ -5,9 +5,8 @@ def final_countdown(x)
   if x == 0
     puts x
   else
-    x -= 1
     puts x
-    #final_countdown(x - 1)
+    final_countdown(x - 1)
   end
 end
 
