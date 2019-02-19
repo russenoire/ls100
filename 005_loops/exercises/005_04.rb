@@ -2,7 +2,7 @@ print "Enter any number to count down to ZERO: "
 x = gets.chomp.to_i
 
 def final_countdown(x)
-  if x == 0
+  if x <= 0
     puts x
   else
     puts x
