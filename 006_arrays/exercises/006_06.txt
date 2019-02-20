@@ -1,0 +1,5 @@
+names = ['bob', 'joe', 'susan', 'margaret']
+names['margaret'] = 'jody'
+
+# a) names isn't a hash, so its indices can't be accessed or modified that way
+# b) if the idea was to append 'jody' to names: names << 'jody' would work

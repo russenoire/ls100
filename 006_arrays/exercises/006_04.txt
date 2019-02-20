@@ -1,0 +1,12 @@
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+
+1. arr.index(5)
+# returns the index of the first element in array to satisfy the argument! wow
+# 3
+
+2. arr.index[5]
+# throws a NoMethodError: undefined method `[]' 
+# for #<Enumerator: [15, 7, 18, 5, 12, 8, 5, 1]:index>
+
+3. arr[5]
+# 8
