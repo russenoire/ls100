@@ -3,3 +3,5 @@ names['margaret'] = 'jody'
 
 # a) names isn't a hash, so its indices can't be accessed or modified that way
 # b) if the idea was to append 'jody' to names: names << 'jody' would work
+  b after solution) oh! not clear that the intent was to substitute!
+  so names[3] = 'jody'
