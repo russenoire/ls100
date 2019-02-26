@@ -14,7 +14,7 @@ anagrams = {}
 
 words.each do |word|
   key = word.chars.sort.join
-  anagrams.has_key?(key) ? (anagrams[key] += [word]) : (anagrams[key] = word)
+  anagrams.has_key?(key) ? (anagrams[key] += [word]) : (anagrams[key] = [word])
 end
 
 anagrams.each { |k, v| p v.sort }
