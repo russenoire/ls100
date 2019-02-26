@@ -10,11 +10,11 @@ print out values from anagrams.
 words = ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
          'flow', 'neon']
-anagrams = words.map { |x| x.chars.sort.join }.uniq
-anagrams_hash = {}
+anagrams = {}
 
-anagrams.each { |x| anagrams_hash[x] = [] }
+words.each do |word|
+  key = word.chars.sort.join
+  anagrams.has_key?(key) ? (anagrams[key] += [word]) : (anagrams[key] = word)
+end
 
-words.each { |x| anagrams_hash[x.chars.sort.join] += [x] }
-
-anagrams_hash.each { |k, v| p v.sort }
+anagrams.each { |k, v| p v.sort }
