@@ -1,5 +1,5 @@
-talk = Proc.new do
-  puts "Chit chat chatter!"
+talk = Proc.new do |name|
+  puts "Chit chat chatter! Hi #{name}"
 end
 
-talk.call
+talk.call "Naomi"
