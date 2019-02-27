@@ -1,0 +1,4 @@
+exception handling is the process of preventing input or situations that would 
+cause errors, or exceptions, from halting program execution (and frustrating 
+users). we give a program options for continuing gracefully in the event an 
+exception is thrown.

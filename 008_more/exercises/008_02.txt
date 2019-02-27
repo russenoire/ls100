@@ -1,0 +1,8 @@
+def execute(&block)
+  block
+end
+
+execute { puts "Hello from inside the execute method!" }
+
+# it prints nothing because the block isn't called
+# it returns a Proc object
