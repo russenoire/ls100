@@ -1,0 +1,2 @@
+the indices or 'keys' for an array can only be numeric, whereas a hash's keys 
+can be almost anything (symbols, numbers, characters, strings, other hashes...) 
