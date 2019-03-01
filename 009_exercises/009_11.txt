@@ -1,0 +1,6 @@
+Ruby-Lang @ https://www.ruby-lang.org/en/
+
+If I must pick a favorite, I nominate Ruby-Lang: the collection of links and 
+guides for Ruby learners is exhaustive (eight different books on learning and
+working with Ruby alone!). It's a minimalistic, visually appealing, easily-
+navigable website as well.
