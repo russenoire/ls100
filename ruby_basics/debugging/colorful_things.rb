@@ -6,7 +6,7 @@ things.shuffle!
 
 i = 0
 loop do
-  break if i > colors.length
+  break if i > things.length - 1
 
   if i == 0
     puts 'I have a ' + colors[i] + ' ' + things[i] + '.'
@@ -18,8 +18,14 @@ loop do
 end
 
 # the colors array has a length of 8, while the things array
-# is 7 elements long. the above loop is set to break after 8
+# is 7 elements long. the above loop is set to break after 9
 # elements, which means that this code will throw an error 
-# after the loop reaches the end of things.
+# after the loop reaches the end of things, or things[6].
 # this could be fixed by adding another element in things, 
 # or dropping one from colors.
+
+# haha, nope. i originally typed this up omitting 'green'
+# and it still threw an error. things[7..9] and colors[8..9]
+# all return nil...and nil can't be converted into a String.
+# i edited the break statement to hinge on things.length
+# instead, and subtracted 1 to account for the zero index.
