@@ -29,3 +29,7 @@ end
 # all return nil...and nil can't be converted into a String.
 # i edited the break statement to hinge on things.length
 # instead, and subtracted 1 to account for the zero index.
+
+# on further exploration:
+# we could check for the shorter of the two arrays before
+# the break statement, i.e.: if colors.length > things.length
