@@ -1,4 +1,4 @@
-colors = ['red','yellow','purple','dark blue','turquoise','silver','black']
+colors = ['red','yellow','purple','green','dark blue','turquoise','silver','black']
 things = ['pen','mouse pad','coffee mug','sofa','surf board','training mat','notebook']
 
 colors.shuffle!
