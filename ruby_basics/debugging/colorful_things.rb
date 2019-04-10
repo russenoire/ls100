@@ -21,10 +21,8 @@ end
 # is 7 elements long. the above loop is set to break after 9
 # elements, which means that this code will throw an error 
 # after the loop reaches the end of things, or things[6].
-# this could be fixed by adding another element in things, 
-# or dropping one from colors.
 
-# haha, nope. i originally typed this up omitting 'green'
+# i originally typed this up omitting 'green'
 # and it still threw an error. things[7..9] and colors[8..9]
 # all return nil...and nil can't be converted into a String.
 # i edited the break statement to hinge on things.length
