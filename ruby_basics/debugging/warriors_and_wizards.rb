@@ -8,13 +8,15 @@ character_classes = {
 }
 
 puts 'Please type your class (warrior, thief, scout, mage):'
-input = gets.chomp.downcase
+input = gets.chomp.downcase.to_sym
 
-player.merge(character_classes[input])
+new_player = player.merge(character_classes[input])
 
 puts 'Your character stats:'
-puts player
+puts new_player
 
 # character_classes is being passed a String, not a symbol,
 # as a key. of course character_classes[input] is returning
 # nil. cast input to a symbol first.
+# the second bug is occurring because Hash#merge is not mutating its
+# caller. the player.merge() method call should be saved to a variable.
